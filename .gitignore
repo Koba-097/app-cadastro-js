@@ -1,0 +1,7 @@
+# Python / Pycharm
+.venv/
+__pycache__/
+.idea
+
+# Sistema
+.DS_Store
