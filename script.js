@@ -69,6 +69,15 @@ btnRemover.addEventListener("click", function() {
     });
 }
 
+function mostrarTela(idTela {
+
+document.querySelectorAll(".tela").forEach(tela => {
+        tela.style.display = "none;"
+        });
+
+document.getElementById(idTela).style.display = "block";
+}
+
 botaoAdicionar.addEventListener("click", function () { //PEGA O TEXTO DIGITADO NO INPUT TRIM REMOVE ESPAÇOS
     const valor = entrada.value.trim();
 
@@ -97,3 +106,12 @@ botaoAdicionar.addEventListener("click", function () { //PEGA O TEXTO DIGITADO N
         mensagem.innerText = "Lista Limpa"; //
 
         });
+
+window.addEventListener("storage", function(event) {
+    if (event.key === "dados") {
+        cadastro.dados =
+JSON.parse(localStorage.getItem("dados"))
+|| [];
+        atualizarLista();
+    }
+});

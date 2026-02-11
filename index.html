@@ -7,12 +7,21 @@
 </head>
 <body>
 
-    <h2>Cadastro Simples</h2>
-    <input id="entrada" placeholder="Digite um algo">
-    <button id="adicionar">Adicionar</button>
-    <button id="limpar">Limpar</button>
-    <p id="mensagem"></p>
-    <ul id="lista"></ul>
+    <div id="telaPrincipal" class="tela">
+        <h2>Cadastro Simples</h2>
+
+        <input id="entrada" placeholder="Digite um algo">
+        <button id="adicionar">Adicionar</button>
+        <button id="limpar">Limpar</button>
+        <p id="mensagem"></p>
+        <ul id="lista"></ul>
+    </div>
+
+    <div id="telaSecundaria" class="tela" style="displa: none;">
+        <h2>Outra tela</h2>
+        <button
+onclick="mostrarTela('telaPrincipal')">Voltar</button>
+    </div>
 
     <script src="script.js"></script>
      </body>
