@@ -69,15 +69,6 @@ btnRemover.addEventListener("click", function() {
     });
 }
 
-function mostrarTela(idTela {
-
-document.querySelectorAll(".tela").forEach(tela => {
-        tela.style.display = "none;"
-        });
-
-document.getElementById(idTela).style.display = "block";
-}
-
 botaoAdicionar.addEventListener("click", function () { //PEGA O TEXTO DIGITADO NO INPUT TRIM REMOVE ESPAÇOS
     const valor = entrada.value.trim();
 
@@ -89,13 +80,15 @@ botaoAdicionar.addEventListener("click", function () { //PEGA O TEXTO DIGITADO N
     if (cadastro.dados.includes(valor)) { // SE ESTIVER NO ARRAY
         mensagem.innerText = "Nome já existe";
         mensagem.className = "erro";
+
         return; //PARA TUDO AQUI
     }
 
     cadastro.adicionar(valor); //ADICIONA O VALOR AO CADASTRO
     atualizarLista(); //ATUALIZA A LISTA NA TELA
     mensagem.innerText = "Adicionado!";
-    mensage.innerText = "sucesso";
+    mensagem.className = "sucesso";
+
     entrada.value = "";
 });
 
@@ -107,7 +100,12 @@ botaoAdicionar.addEventListener("click", function () { //PEGA O TEXTO DIGITADO N
 
         });
 
-window.addEventListener("storage", function(event) {
+document.addEventListener("DOMContentLoaded", function () {
+    atualizarLista();
+    });
+
+window.addEventListener("storage",
+function (event) {
     if (event.key === "dados") {
         cadastro.dados =
 JSON.parse(localStorage.getItem("dados"))
