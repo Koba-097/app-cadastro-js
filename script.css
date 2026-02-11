@@ -1,0 +1,43 @@
+button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 8px 16px;
+   border-color: black;
+   border-radius: 5px
+   cursor: ponter;
+   transition: background-color 0.2s;
+}
+
+button:disabled {
+   background-color: #888;
+   cursor: not allowed;
+}
+
+button:hover:not(:disabled) {
+   background-color: #45a049
+}
+
+#mensagem {
+   font-weight: bold;
+   margin-tio: 10px
+}
+
+.sucesso {
+   color: green;
+}
+
+.erro {
+   color: red;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+ul li {
+   background-color: #f2f2f2;
+   margin: 5px 0;
+   padding: 8px;
+   border-radius 4px;
+}

@@ -79,13 +79,14 @@ botaoAdicionar.addEventListener("click", function () { //PEGA O TEXTO DIGITADO N
 
     if (cadastro.dados.includes(valor)) { // SE ESTIVER NO ARRAY
         mensagem.innerText = "Nome já existe";
+        mensagem.className = "erro";
         return; //PARA TUDO AQUI
     }
 
     cadastro.adicionar(valor); //ADICIONA O VALOR AO CADASTRO
     atualizarLista(); //ATUALIZA A LISTA NA TELA
-
     mensagem.innerText = "Adicionado!";
+    mensage.innerText = "sucesso";
     entrada.value = "";
 });
 
