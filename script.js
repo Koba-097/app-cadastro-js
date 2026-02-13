@@ -43,7 +43,10 @@ const botaoAdicionar =
 document.getElementById("adicionar");
 const botaoLimpar =
 document.getElementById("limpar");
-
+const btnRemover =
+document.createElement("button");
+btnRemover.innerText = "x";
+btnRemover.classList.add("btn-remover")
 //FUNCAO ATUALIZAR LISTA
 
 function atualizarLista() {
