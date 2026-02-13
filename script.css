@@ -9,15 +9,15 @@ body {
 
    .cointainer {
       background: black;
-      padding: 30px:
-      border-radius: 20px:
+      padding: 100px:
+      border-radius: 90px;
       width: 400px;
       box-shadow: 0 10px 30px
 rgba(0,0,0,0.9);
 }
 
 h1 {
-    color:white
+    color:white;
     text-align: center;
 }
 
@@ -26,26 +26,30 @@ input {
     padding: 10px;
     border-radius: 60px;
     border-color: magenta;
-    margin-bottom: 5px:
+    margin-bottom: 5px;
     outline: none;
 }
 
 #adicionar,
 #limpar {
     width: 100%;
-    background-color: #000000;
+    background-color: black;
     color: white;
-    padding: 2px;
+    padding: 7px;
     border-color: magenta;
-    border-radius: 60px
+    border-radius: 60px;
     cursor: pointer;
     transition: background-color 0.7s;
 }
 
 .btn-remover {
-    width: 3;
-    height: 3;
-    border-radius: 90%
+    width: 3px;
+    height: 3px;
+    border-radius: 90%;
+    background-color: black;
+    border color: magenta;
+    color: black;
+
     display: flex;
     align-items: center;
     justify-content: center;
