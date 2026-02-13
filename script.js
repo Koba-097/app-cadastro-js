@@ -56,7 +56,7 @@ document.createElement("li");
 
         const btnRemover =
 document.createElement("button");
-        btnRemover.innerText = "❌";
+        btnRemover.innerText = "x";
 
 
 btnRemover.addEventListener("click", function() {

@@ -1,25 +1,59 @@
-button {
-   background-color: #000000;
-   color: white;
-   padding: 3px 3px;
-   border-color: magenta;
-   border-radius: 5px
-   cursor: ponter;
-   transition: background-color 1s;
+body {
+   font-family: Arial, sans-serif;
+   background: #121212;
+   margin: 0;
+   padding: 40px;
+   display: flex;
+   justify-content: center;
+}
+
+   .cointainer {
+      background: black;
+      padding: 30px:
+      border-radius: 20px:
+      width: 400px;
+      box-shadow: 0 10px 30px
+rgba(0,0,0,0.9);
+}
+
+h1 {
+    color:white
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 60px;
+    border-color: magenta;
+    margin-bottom: 5px:
+    outline: none;
+}
+
+#formCadastro button {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 2px;
+    border-color: magenta;
+    border-radius: 60px
+    cursor: pointer;
+    transition: background-color 0.7s;
 }
 
 button:disabled {
-   background-color: #888;
-   cursor: not allowed;
+    background-color: #888;
+    cursor: not allowed;
 }
 
-button:hover:not(:disabled) {
-   background-color: #23a23
+button:hover {
+    background: #45a049:
+    transform: scale(1);
 }
 
 #mensagem {
-   font-weight: bold;
-   margin-tio: 1px
+    font-weight: bold;
+    margin-top: 1px
 }
 
 .sucesso {
@@ -31,13 +65,34 @@ button:hover:not(:disabled) {
 }
 
 ul {
-   list-style: none;
-   padding: 0;
+    list-style: none;
+    padding: 0;
+    background-color: black;
 }
 
-ul li {
-   background-color: #f2f2f2;
-   margin: 5px 0;
-   padding: 1px;
-   border-radius 1px;
+
+
+li {
+    background: black;
+    color: white;
+    padding: 0px;
+    border-radius: 90px;
+    margin-bottom 90px;
+    display: flex;
+    justify-content: left 80%;
+    align-items: center;
+    transition: 0.2s;
+}
+
+li:hover {
+    background: #222;
+}
+
+#telaPrincipal {
+    background: #1e1e1;
+    padding: 30px;
+    border-radius: 20px;
+    width: 400%
+    box-shadow: 0 10px 30px;
+rgba(0,0,0,0.5);
 }
