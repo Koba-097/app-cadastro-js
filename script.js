@@ -46,7 +46,7 @@ document.getElementById("limpar");
 const btnRemover =
 document.createElement("button");
 btnRemover.innerText = "x";
-btnRemover.classList.add("btn-remover")
+btnRemover.classList.add("btn-remover");
 //FUNCAO ATUALIZAR LISTA
 
 function atualizarLista() {
